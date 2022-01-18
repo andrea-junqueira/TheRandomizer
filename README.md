@@ -1,8 +1,8 @@
 # The Randomizer
 A tool to foster students' participation
 
-The Randomizer is an R function that allows instructors to foster and register participation in class effectively. At every run, the function selects an individual and provides the instructor with the opportunity of writing this individual's grade immediately. These records are then saved into two different CSV. In the first, the function creates a spreadsheet with all students' grades. In the second, the function produces a log file with a record of all students who were invited to participate, including the exact day and time they were selected.
-In addition, the function also allows instructors to write participation manually (no randomization).
+The Randomizer is an R function that allows instructors to foster and register participation in class effectively. At every run, the function selects an individual and provides the instructor with the opportunity of writing this individual's grade immediately. These records are then saved into two different CSV files. In the first, the function creates a spreadsheet with all students' grades. In the second, the function produces a log file with a record of all students who were invited to participate, including the exact day and time they were selected.
+In addition, the function also allows instructors to write participation manually (no randomization). In that case, the function will display a list with all students registered, to make it easier for instructors to copy the student's name and then add the participation points, for example: Jane Doe, 10.
 
 To ensure students are selected roughly a similar number of times, the function randomly selects among those individuals who were invited to participate the least.
 
