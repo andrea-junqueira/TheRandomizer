@@ -26,7 +26,7 @@ randomizer = function(students=NA, students_drop=NA, students_excused=NA,
   assert(!is.na(directory),
          "('directory' is a string with the directory that your output should be saved (or the directory in which your output was previously saved.")
   
-  assert(!is.na(directory_backup) & backup==T,
+  assert((!is.na(directory_backup) & backup==T)|backup==F,
          "('directory_backup' is a string with the directory that you wish to save your backup. To save a backup you must inform the directory for the backup.")
   
   assert(!(file_created==F & manual==T),
