@@ -6,7 +6,7 @@ In addition, the function also allows instructors to write participation manuall
 
 To ensure students are selected roughly a similar number of times, the function randomly selects those invited to participate the least.
 
-If you run the function by mistake or wish not to make any modifications to the table, when the Randomizer asks you to "Enter the student's name and the number of points:", just enter either "Skip" or "skip".
+If you run the function by mistake or wish not to make any modifications to the table, when the Randomizer asks you to "Enter the number of points:", just type either "Skip" or "skip".
 
 If you find inefficiencies or errors, do not hesitate to contact me.
 
