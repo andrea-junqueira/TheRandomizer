@@ -9,7 +9,7 @@ randomizer = function(students=NA, students_drop=NA, students_excused=NA,
   
   # Check if a file already exists:
   file_created = file.exists(paste0(directory, "/", file_name, ".csv") )
-  
+    
   disregard = subset(c(students_drop, students_excused), !is.na(c(students_drop, students_excused))) 
   
   #----
