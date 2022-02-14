@@ -10,7 +10,7 @@ randomizer = function(students=NA, students_drop=NA, students_excused=NA,
   # Check if a file already exists:
   file_created = file.exists(paste0(directory, "/", file_name, ".csv") )
   
-  disregard = c(students_drop, students_excused)
+  disregard = subset(c(students_drop, students_excused), !is.na(c(students_drop, students_excused))) 
   
   #----
   
@@ -160,7 +160,7 @@ randomizer = function(students=NA, students_drop=NA, students_excused=NA,
         
       } else {
         
-        table[table$Students==selected, column] = student_grade
+        table[table$Students==selected, min(column)] = student_grade
         
       }
       
@@ -184,4 +184,13 @@ randomizer = function(students=NA, students_drop=NA, students_excused=NA,
   } #**
   
 } # end of function
+
+
+
+
+
+
+
+
+
 
