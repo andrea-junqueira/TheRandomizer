@@ -71,7 +71,7 @@ randomizer = function(students=NA, students_drop=NA, students_excused=NA,
       
     } else {
       
-      table[table$Students==selected, column] = grade
+      table[table$Students==selected, min(column)] = grade
       
     }
     
